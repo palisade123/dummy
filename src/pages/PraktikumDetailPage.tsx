@@ -80,7 +80,7 @@ export const PraktikumDetailPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-green-50 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <button
           onClick={() => navigate('/praktikum')}
@@ -92,7 +92,7 @@ export const PraktikumDetailPage = () => {
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center space-x-3 mb-2">
-            <span className="bg-blue-600 text-white text-xl font-bold px-5 py-2 rounded-lg">
+            <span className="bg-primary-gradient text-white text-xl font-bold px-5 py-2 rounded-lg">
               {module.nomor}
             </span>
             <h1 className="text-3xl font-bold text-gray-900">{module.judul}</h1>

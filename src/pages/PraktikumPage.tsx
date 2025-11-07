@@ -33,11 +33,11 @@ export const PraktikumPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-green-50 py-8">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center space-x-3 mb-2">
-            <BookOpen className="w-8 h-8 text-blue-600" />
+            <BookOpen className="w-8 h-8 text-primary-solid" />
             <h1 className="text-3xl font-bold text-gray-900">Praktikum Modules</h1>
           </div>
           <p className="text-gray-600">Pilih modul praktikum yang ingin Anda pelajari</p>
@@ -53,16 +53,16 @@ export const PraktikumPage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex-1">
                   <div className="flex items-center space-x-3 mb-2">
-                    <span className="bg-blue-600 text-white text-lg font-bold px-4 py-2 rounded-lg">
+                    <span className="bg-primary-gradient text-white text-lg font-bold px-4 py-2 rounded-lg">
                       {module.nomor}
                     </span>
-                    <h2 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <h2 className="text-xl font-bold text-gray-900 group-hover:text-primary-gradient transition-all">
                       {module.judul}
                     </h2>
                   </div>
                   <p className="text-gray-600 ml-16">{module.deskripsi}</p>
                 </div>
-                <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
+                <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-green-600 group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           ))}

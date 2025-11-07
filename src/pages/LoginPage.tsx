@@ -27,11 +27,11 @@ export const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-red-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md">
         <div className="flex justify-center mb-6">
-          <div className="bg-blue-100 p-4 rounded-full">
-            <LogIn className="w-8 h-8 text-blue-600" />
+          <div className="bg-green-100 p-4 rounded-full">
+            <LogIn className="w-8 h-8 text-primary-solid" />
           </div>
         </div>
 
@@ -80,7 +80,7 @@ export const LoginPage = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-primary-gradient text-white py-3 rounded-lg font-bold hover:bg-primary-gradient transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </button>

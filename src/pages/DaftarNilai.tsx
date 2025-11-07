@@ -114,7 +114,7 @@ export const DaftarNilai = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-green-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
@@ -122,7 +122,7 @@ export const DaftarNilai = () => {
             {user && !showForm && (
               <button
                 onClick={() => setShowForm(true)}
-                className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center space-x-2 bg-primary-gradient text-white px-4 py-2 rounded-lg hover:bg-primary-gradient transition-all"
               >
                 <Plus className="w-5 h-5" />
                 <span>Add Student</span>
@@ -130,17 +130,17 @@ export const DaftarNilai = () => {
             )}
           </div>
 
-          <div className="flex items-center space-x-2 text-gray-600 bg-blue-50 p-4 rounded-lg">
-            <Award className="w-5 h-5 text-blue-600" />
+          <div className="flex items-center space-x-2 text-gray-600 bg-green-50 p-4 rounded-lg">
+            <Award className="w-5 h-5 text-primary-solid" />
             <span className="font-semibold">
-              Average Score: <span className="text-blue-600 text-xl">{averageScore}</span>
+              Average Score: <span className="text-primary-solid text-xl">{averageScore}</span>
             </span>
           </div>
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center space-x-2 mb-6">
-            <BarChart3 className="w-6 h-6 text-gray-700" />
+            <BarChart3 className="w-6 h-6 text-green-700" />
             <h2 className="text-2xl font-bold text-gray-900">Grade Distribution</h2>
           </div>
 
@@ -223,7 +223,7 @@ export const DaftarNilai = () => {
               <div className="flex space-x-3">
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="bg-primary-gradient text-white px-6 py-2 rounded-lg hover:bg-primary-gradient transition-all"
                 >
                   {editingId ? 'Update' : 'Add'}
                 </button>
