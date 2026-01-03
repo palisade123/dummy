@@ -11,6 +11,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
     "@supabase/supabase-js": "^2.57.4",
     "@tanstack/react-query": "^5.90.7",
     "lucide-react": "^0.344.0",
@@ -19,6 +21,7 @@
     "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
     "@eslint/js": "^9.9.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",

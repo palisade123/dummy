@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">virtual_lab_kehutanan</string>
+    <string name="title_activity_main">virtual_lab_kehutanan</string>
+    <string name="package_name">com.japs.virtuallab</string>
+    <string name="custom_url_scheme">com.japs.virtuallab</string>
+</resources>

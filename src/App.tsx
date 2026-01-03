@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// UBAH DISINI: Ganti BrowserRouter menjadi HashRouter
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { Header } from './components/Header';
 import { SplashScreen } from './components/SplashScreen';
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <AuthProvider>
+      {/* Karena kita pakai alias 'as Router' diatas, tag ini tidak perlu diubah */}
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Header />
